@@ -1,5 +1,5 @@
 "Plugins
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/AppData/Local/nvim/plugged')
 " Temas
 " Themes
 Plug 'overcache/NeoSolarized'

@@ -53,8 +53,8 @@ vnoremap < <gv
 vnoremap > >gv
 
 "-------------------------------Sources-------------------------------
-source $HOME/.config/nvim/plugins/plugins.vim
-source $HOME/.config/nvim/plugins/plug-config.vim
+source $HOME\AppData\Local\nvim\plugins\plugins.vim
+source $HOME\AppData\Local\nvim\plugins\plug-config.vim
 "--------------------------------Plugins Config--------------------------------------------
 
 
@@ -109,6 +109,12 @@ nnoremap <silent> <S-TAB> :bprevious<CR>
 "cerrar buffer
 nnoremap <leader>ob :Buffers<CR>
 nmap <leader>bd :bdelete<CR>
+" tmux navigator
+nnoremap <silent> <Leader><C-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <Leader><C-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <Leader><C-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <Leader><C-l> :TmuxNavigateRight<cr>
+
 "--Themes config--
 "--------------------------------------------
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.jsx, *.js, *.ts, *.tsx'
@@ -129,7 +135,7 @@ function! OpenTerminal()
     execute "q"
   else
     " open terminal
-    execute "vsp term://zsh"
+    execute "vsp term://powershell"
 
     " turn off numbers
     execute "set nonu"
