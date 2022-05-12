@@ -9,10 +9,25 @@ if exists("&termguicolors") && exists("&winblend")
   set wildoptions=pum
   set pumblend=5
   set background=dark
-  " Use NeoSolarized
-  let g:neosolarized_termtrans=1
-  runtime ./colors/NeoSolarized.vim
-  colorscheme NeoSolarized
+  "Use NeoSolarized
+  "let g:neosolarized_termtrans=1
+  let g:tokyonight_style = 'night' " available: night, storm
+  let g:tokyonight_enable_italic = 0
+  let g:tokyonight_transparent_background = 1
+  "let g:onedark_transparent_background = 1
+  let g:lightline = {'colorscheme': 'tokyonight'}
+  let g:tokyonight_sidebars = [ "qf", "vista_kind", "terminal", "packer" ]
+  let g:tokyonight_colors = {
+  \ 'hint': 'orange',
+  \ 'error': '#ff0000'
+\ }
+  "runtime ./colors/NeoSolarized.vim
+  runtime ./colors/tokyonight.vim
+  " runtime ./colors/onedark.vim
+  "colorscheme NeoSolarized
+  "use 'folke/tokyonight.nvim'
+  colorscheme tokyonight
+  " colorscheme onedark
 endif
 
 "}}}
@@ -135,7 +150,7 @@ function! OpenTerminal()
     execute "q"
   else
     " open terminal
-    execute "vsp term://powershell"
+    execute "vsp term://pwsh"
 
     " turn off numbers
     execute "set nonu"
