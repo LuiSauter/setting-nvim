@@ -7,6 +7,11 @@
 - Git
 - Gcc ( C/C++ compilador (Requerido por [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)) ) 
 - Vim-Plug
+- Scoop
+- Brew
+- Oh-my-posh
+- pwsh
+- Windows terminal preview
 ## Contenidos de la configuración
 - Nerdtree  como FileManager
 - Git para ejecutar
@@ -17,6 +22,3 @@
 - Auto-Pairs
 - Vim-CloseTags
 - Vim-Multiple-Cursors
-
-
-
