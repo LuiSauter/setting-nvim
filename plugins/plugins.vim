@@ -1,5 +1,5 @@
 "Plugins
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/AppData/Local/nvim/plugged')
 " Temas
 " Themes
 Plug 'overcache/NeoSolarized'
@@ -7,6 +7,9 @@ Plug 'morhetz/gruvbox'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'joshdick/onedark.vim'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+"Plug 'ghifarit53/tokyonight-vim'
+"Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'ghifarit53/tokyonight-vim'
 " "IDE
 Plug 'easymotion/vim-easymotion'
 "Navigate with C-h C-l C-j C-k
